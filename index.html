@@ -14,31 +14,112 @@
     <div class="left">
         <h1>Sundays</h1>
         <ul>
-            <i class="fa-regular fa-chart-bar"></i>
-            <li> Dashboard</li>
-            <i class="fa-solid fa-square-check"></i>
-            <li>My Task</li>
-            <i class="fa-solid fa-bowl-food"></i>
-            <li>Meal Planner</li>
-
-            <i class="fa-solid fa-clipboard"></i>
-            <li>Documents</li>
-            <i class="fa-solid fa-receipt"></i>
-            <li>Receipts</li>
-            <i class="fa-solid fa-message"></i>
-            <li>Chats</li>
+            <span>
+                <i class="fa-regular fa-chart-bar"></i>
+                <li> Dashboard</li>
+            </span>
+            <span class="color">
+                <i class="fa-solid fa-square-check"></i>
+                <li>My Task</li>
+            </span>
+            <span> <i class="fa-solid fa-bowl-food"></i>
+                <li>Meal</li>
+            </span>
+            <span><i class="fa-solid fa-clipboard"></i>
+                <li>Documents</li>
+            </span>
+            <span> <i class="fa-solid fa-receipt"></i>
+                <li>Receipts</li>
+            </span>
+            <span><i class="fa-solid fa-message"></i>
+                <li>Chats</li>
+            </span>
         </ul>
     </div>
     <div class="right">
         <div class="header">
             <ul>
-                <span>My Task</span>
-                <span><label for="text"><i class="fa-solid fa-magnifying-glass"></i></label>
-                    <input type="text" id="text"></span>
+                <span class="heading">My Task</span>
+                <div class="text-area"><label for="text"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    <input type="text" id="text">
+                </div>
 
                 <span><i class="fa-solid fa-bell"></i></span>
                 <span class="profile"></span>
             </ul>
+        </div>
+        <div class="categories">
+            <h1>Categories</h1>
+            <div class="card-cont">
+                <div class="cards" id="homehelp">
+                    <i class="fa-solid fa-house"></i>Home help
+                </div>
+                <div class="cards" id="event">
+                    <i class="fa-solid fa-magnifying-glass"></i>Plan an event
+                </div>
+                <div class="cards" id="package">
+                    <i class="fa-solid fa-box"></i>
+                    Return a package
+                </div>
+                <div class="cards" id="gift">
+                    <i class="fa-solid fa-box"></i>
+                    Send a Gifts
+                </div>
+                <div class="cards" id="appointment">
+                    <i class="fa-solid fa-calendar"></i>
+                    Appointment
+                </div>
+                <div class="cards" id="passport">
+                    <i class="fa-regular fa-file"></i>
+                    Get a passport
+                </div>
+                <div class="cards" id="kids-activity">
+                    <i class="fa-solid fa-basketball"></i>
+                    Find kids activity
+                </div>
+                <div class="cards" id="trip">
+                    <i class="fa-solid fa-plane"></i>
+                    Plan a trip
+                </div>
+            </div>
+
+        </div>
+        <div class="Todolist">
+            <div class="Filter">
+                <div class="left-filter">
+                    <button><i class="fa-solid fa-filter"></i>Filter</button>
+                    <button> <i class="fa-solid fa-sort"></i> Sort</button>
+                    <button> <i class="fa-solid fa-eye-slash"></i> Hide</button>
+                    <button><i class="fa-solid fa-ellipsis"></i></button>
+                </div>
+                <div class="right-filter"> <button><i class="fa-solid fa-plus"></i> New Project</button>
+                </div>
+            </div>
+            <div class="data">
+                <h1>TODO</h1>
+                <div class="data-card">
+                    <span class="hero">Appointment of clinic</span>
+                    <span class="link"><i class="fa-solid fa-link"></i> 12</span>
+                    <span><i class="fa-solid fa-comment"></i> 21</span>
+                    <span>In progress</span>
+                    <span>High</span>
+                    <span><i class="fa-solid fa-clock"></i> 15 days left</span>
+                    <span><label for="upload">Progress:</label>
+                        <progress id="upload" value="0" max="100">70%</progress></span>
+                    <span><i class="fa-solid fa-ellipsis"></i></span>
+                </div>
+                <div class="data-card">
+                    <span class="hero">Track Medicine</span>
+                    <span><i class="fa-solid fa-link"></i> 21</span>
+                    <span><i class="fa-solid fa-comment"></i> 6</span>
+                    <span>In progress</span>
+                    <span>Medium</span>
+                    <span><i class="fa-solid fa-clock"></i> 12 hours left</span>
+                    <span><label for="upload">Progress:</label>
+                        <progress id="upload" value="0" max="100">70%</progress></span>
+                    <span><i class="fa-solid fa-ellipsis"></i></span> <span></span>
+                </div>
+            </div>
         </div>
     </div>
 </body>
